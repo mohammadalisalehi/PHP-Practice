@@ -1,0 +1,253 @@
+body {
+	background-image:url("http://static.dev/images/dark.png") ;
+	height          : 100%;
+	color           : #fff;
+}
+
+header {
+	height          : 70px;
+	width           : 100%;
+	background-color: rgba(27, 25, 25, 0.32);
+	text-align      :center;
+	line-height     : 70px;
+	font-size       : 1.7em;
+	direction       : rtl;
+}
+
+footer {
+	right      : 3%;
+	color      : #fff;
+	position   : fixed;
+	bottom     : 0;
+	text-align :left;
+	line-height: 70px;
+	font-size  : 1.3em;
+	direction  : rtl;
+	height     : 70px;
+
+}
+footer a {
+	color: #fff;
+}
+
+footer a:hover {
+	color: #fff;
+}
+
+.rtl footer {
+	right: inherit;
+	left: 3%;
+}
+
+form div {
+	position: relative;
+	min-height: 70px;
+
+}
+
+form div input[type=number] ,form div input[type=text] {
+	position        : relative;
+	border-radius   : 1px;
+	padding         : 5px;
+	border          : 2px solid transparent ;
+	width           : 100%;
+	height          : 40px;
+	background-color: #eee;
+	transition      :.2s;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+form input[type=number]:focus, form input[type=number]:valid,form input[type=text]:focus, form input[type=text]:valid {
+	border: 2px solid #8B8C8B ;
+	background-color: #fff;
+	color: #8B8C8B;
+	user-select: text;
+}
+
+form div label {
+	position   : absolute;
+	z-index    : 1;
+	font-size  : 1.5em;
+	padding    :0 3%;
+	line-height: 40px;
+	right      :0;
+	color      : #8B8C8B;
+	transition :.3s;
+	top        : 0;
+	width      : 100%;
+}
+
+form div input[type=number]:focus + label, form div input[type=number]:valid + label,form div input[type=text]:focus + label, form div input[type=text]:valid + label{
+	top: -35px;
+	color: #fff;
+}
+
+form input[type=submit] {
+	border-radius: 1px;
+	padding      : 5px 20px;
+	border       : none;
+	display      : inline-block;
+	margin       : 0;
+	font-size    : 1.5em;
+	transition   :.3s;
+	min-width    : 110px;
+	min-height   : 40px;
+}
+
+form input[type=submit]:hover ,form input[type=submit]:focus{
+	color: #fff;
+	background-color: #777;
+  	transition:.3s;
+}
+
+.homepage a{
+	display         : inline-block;
+	color           : #fff;
+	font-size       : 1.3em;
+	background-color: rgba(53, 99, 64, 0.52);
+	width           : 12%;
+	margin          : 6px;
+	height          : 150px;
+	border-radius   : 50%;
+	text-align      : center;
+	line-height     : 150px;
+	transition      :.3s;
+	min-width       : 150px;
+	overflow        : hidden;
+}
+
+.homepage a:hover {
+ 	background-color: rgba(63, 167, 87, 0.52);
+}
+
+ aside a {
+	display         : block;
+	font-size       : 1.6em;
+	background-color: rgba(0, 0, 0, 0.30);
+	margin-bottom   : 2px;
+	color           : #fff;
+	padding         : 5.9px 15px;
+}
+
+ aside a:hover {
+ 	background-color: rgba(0, 0, 0, 0.50);
+ 	color: #fff;
+ }
+
+section {
+	padding:10px;
+}
+
+.homepage {
+	margin: 0 auto;
+	padding-top: 50px;
+}
+
+header a{
+	display: inline-block;
+	width: 5%;
+	float: right;
+	color: #fff;
+	line-height: 10px;
+	margin-left: 1px;
+	background-color: rgba(53, 99, 64, 0.52);
+	position: absolute;
+	line-height: 70px;
+	font-size: .8em;
+}
+
+
+header a:last-child {
+	right: 0;
+    top: 0;
+}
+
+header a:nth-child(2) {
+	top: 0;
+    right: 5.2%;
+}
+
+header a:nth-child(3) {
+	top: 0;
+    left: 0;
+}
+
+header a:nth-child(4) {
+	top: 0;
+    /*left: 69px;*/
+    left: 5.2%;
+}
+
+header a:hover{
+	color: #fff;
+	background-color: rgba(63, 167, 87, 0.52);
+}
+
+h1 {
+	color: #eee;
+	font-size: 1.4em;
+}
+
+.active {
+	background-color: rgba(0, 0, 0, 0.70);
+}
+
+.active:hover {
+	background-color: rgba(0, 0, 0, 0.65);
+}
+
+form {
+	margin-top: 40px;
+}
+
+#result {
+	font-size       : 2em;
+	margin-top      : 40px;
+	background-color: rgb(43, 43, 43);
+	padding         :4px;
+	width           : 95%;
+	border          : solid 1px #222;
+}
+
+input[type=radio]{
+	cursor: pointer;
+}
+input[type=radio]+label {
+	margin-right: 17px;
+	margin-top: -14px;
+	cursor: pointer;
+}
+.ltr input[type=radio]+label {
+    margin-right: -7%;
+    margin-top: -12px;
+	cursor: pointer;
+}
+
+
+pre {
+	line-height: 0.6;
+	background-color: #2B2B2B;
+	color: #eee;
+	font-size:.8em;
+}
+
+.radio_input{
+	height: 20px;
+	width: 100%;
+	min-height: 26px;
+}
+
+.about {
+text-align: center;
+/*background-color: #eee;*/
+}
+
+.about h2 {
+	margin-top: 10px;
+color: #fff;
+
+}
